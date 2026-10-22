@@ -5,50 +5,10 @@ Our package is built upon [modelsmatter](https://github.com/AlanHassen/modelsmat
 ## Overview
 modelsmatter_with_retroformer
 ├─aizynthfinder
-│  ├─analysis
-│  │  └─__pycache__
-│  ├─chem
-│  │  └─__pycache__
-│  ├─context
-│  │  ├─cost
-│  │  │  └─__pycache__
-│  │  ├─policy
-│  │  │  ├─model
-│  │  │  │  └─__pycache__
-│  │  │  └─__pycache__
-│  │  ├─scoring
-│  │  │  └─__pycache__
-│  │  ├─stock
-│  │  │  └─__pycache__
-│  │  └─__pycache__
-│  ├─data
-│  │  └─templates
-│  ├─interfaces
-│  │  └─gui
-│  ├─search
-│  │  ├─breadth_first
-│  │  ├─dfpn
-│  │  ├─mcts
-│  │  │  └─__pycache__
-│  │  ├─retrostar
-│  │  │  └─__pycache__
-│  │  └─__pycache__
-│  ├─tools
-│  ├─training
-│  ├─utils
-│  │  └─__pycache__
-│  └─__pycache__
+│  ├─...
 ├─configs
 ├─data
-│  └─cache
-│      └─0bfe89a4-b4e5-4fb4-b608-15ab2e130150
-│          └─joblib
-│              └─external
-│                  └─modelsmatter_modelzoo
-│                      └─external_models
-│                          └─modelsmatter_mhn_react_hpc
-│                              └─mhnreact
-│                                  └─molutils
+│  └─...
 ├─download
 ├─external
 │  └─modelsmatter_modelzoo
@@ -65,53 +25,7 @@ modelsmatter_with_retroformer
 │      │  │  ├─molbart.egg-info
 │      │  │  └─test
 │      │  ├─modelsmatter_localretro_hpc
-│      │  │  ├─data
-│      │  │  │  └─configs
-│      │  │  ├─distributed_preprocessing
-│      │  │  │  ├─data
-│      │  │  │  ├─graph_extraction
-│      │  │  │  ├─labeling
-│      │  │  │  └─preprocessing
-│      │  │  │      └─old
-│      │  │  ├─LocalTemplate
-│      │  │  │  └─__pycache__
-│      │  │  ├─preprocessing
-│      │  │  ├─scripts
-│      │  │  │  └─__pycache__
-│      │  │  └─slurm
-│      │  │      └─general_template
-│      │  │          ├─data
-│      │  │          ├─model
-│      │  │          └─run
-│      │  │              ├─csv_batches
-│      │  │              │  ├─test
-│      │  │              │  ├─train
-│      │  │              │  └─val
-│      │  │              ├─graph_creation
-│      │  │              ├─labeling_data
-│      │  │              │  ├─test
-│      │  │              │  ├─train
-│      │  │              │  └─val
-│      │  │              ├─runs
-│      │  │              └─training_templates
 │      │  ├─modelsmatter_mhn_react_hpc
-│      │  │  ├─data
-│      │  │  │  ├─figs
-│      │  │  │  ├─processed
-│      │  │  │  └─temprel-fortunato
-│      │  │  │      └─template-relevance-master
-│      │  │  │          ├─bin
-│      │  │  │          └─temprel
-│      │  │  │              ├─data
-│      │  │  │              ├─evaluate
-│      │  │  │              ├─models
-│      │  │  │              └─templates
-│      │  │  ├─mhnreact
-│      │  │  │  └─__pycache__
-│      │  │  ├─notebooks
-│      │  │  ├─scripts
-│      │  │  └─tools
-│      │  │      └─docker
 │      │  ├─molbart.egg-info
 │      │  └─Retroformer_as_one_step
 │      │      ├─.vscode
@@ -120,62 +34,19 @@ modelsmatter_with_retroformer
 │      │      ├─checkpoint_FC2_r1_paroutes_50k_typed
 │      │      ├─checkpoint_FC2_r1_paroutes_50k_untyped
 │      │      ├─Classifier
-│      │      │  ├─fp
-│      │      │  │  └─__pycache__
-│      │      │  └─models
 │      │      ├─data_random
 │      │      ├─intermediate_FC2_r1_paroutes_400k
 │      │      ├─intermediate_FC2_r1_paroutes_50k
 │      │      ├─log
 │      │      ├─retroformer
-│      │      │  ├─log
-│      │      │  ├─models
-│      │      │  │  └─__pycache__
-│      │      │  ├─rdchiral
-│      │      │  │  ├─test
-│      │      │  │  └─__pycache__
-│      │      │  ├─retroformer.egg-info
-│      │      │  ├─utils
-│      │      │  │  └─__pycache__
-│      │      │  └─__pycache__
 │      │      ├─Retroformer_as_one_step.egg-info
 │      │      └─__pycache__
 │      └─ssbenchmark
-│          ├─process
-│          ├─ssmodels
-│          │  └─__pycache__
-│          └─__pycache__
 ├─one_step_diversity
 │  ├─models_by_reactions
 │  ├─one_step_diversity.egg-info
 │  ├─utils
-│  │  └─__pycache__
-│  └─__pycache__
 ├─other_depends
-│  ├─pysmilesutils-master
-│  │  ├─build
-│  │  │  ├─bdist.linux-x86_64
-│  │  │  └─lib
-│  │  │      └─pysmilesutils
-│  │  ├─docs
-│  │  │  └─source
-│  │  ├─examples
-│  │  │  └─data
-│  │  ├─pysmilesutils
-│  │  ├─PySMILESutils.egg-info
-│  │  └─tests
-│  │      └─test_pickle
-│  └─route-distances-1.0.1
-│      ├─.github
-│      │  └─workflows
-│      ├─docs
-│      ├─route_distances
-│      │  ├─lstm
-│      │  ├─ted
-│      │  ├─tools
-│      │  └─utils
-│      └─tests
-│          └─data
 └─z_scripts
 
 
@@ -257,7 +128,7 @@ z_process1_for_all_tragictorics_with_diversity.py
 z_process1_for_all_tragictorics_with_diversity.ipynb
 ```
 
-Note：the detailed training process of Retroformer is available in the [GitHub repository](https://)
+Note：the detailed training process of Retroformer is available in the [GitHub repository](https://github.com/Kepeng2019/Retroformer.git)
 
 
 
