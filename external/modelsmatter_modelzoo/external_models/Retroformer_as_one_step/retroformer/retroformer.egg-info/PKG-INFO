@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: retroformer
+Version: 0.1
+Summary: One step model
+Author: kepeng
+Author-email: chenkepengjy@163.com
+Requires-Python: >=3.6

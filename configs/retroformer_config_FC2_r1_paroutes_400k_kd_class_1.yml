@@ -1,0 +1,50 @@
+properties:
+  C: 1.4
+  cutoff_cumulative: 10
+  cutoff_number: 50
+  max_transforms: 6
+  default_prior: 0.5
+  use_prior: True
+  return_first: False
+  iteration_limit: 200
+  time_limit: 28800
+  exclude_target_from_stock: True
+  template_column: retro_template
+  filter_cutoff: 0.05
+  prune_cycles_in_search: True
+  additive_expansion: False
+  search_algorithm: aizynthfinder.search.retrostar.search_tree.SearchTree
+  post_processing: {min_routes: 5, max_routes: 25, all_routes: True, route_distance_model: None}
+  search:
+    'algorithm': 'retrostar'
+    'algorithm_config': 
+        'molecule_cost': 
+            'cost': "ZeroMoleculeCost"
+    'max_transforms': 6
+scorer:
+  AverageTemplateOccurrenceScorer:
+           
+    
+policy:
+  smiles-based:
+    retroformer:
+      gpu_mode: True
+      checkpoint_dir: external/modelsmatter_modelzoo/external_models/Retroformer_as_one_step/checkpoint_FC2_r1_paroutes_400k_typed/
+      checkpoint: std_model_800000.pt
+      intermediate_dir: external/modelsmatter_modelzoo/external_models/Retroformer_as_one_step/intermediate_FC2_r1_paroutes_400k
+      known_class: 'True'
+      classes: 113
+      shared_vocab: 'False'
+      shared_encoder: 'False'
+      encoder_num_layers: 4
+      decoder_num_layers: 4
+      total_beam_size: 30
+      class_size: 1
+      real_beam_size: total_beam_size//class_size____not_a_parameter_but_do_a_illustration
+      class_prediction_model: external/modelsmatter_modelzoo/external_models/Retroformer_as_one_step/Classifier/models/select_fp_iter2_USPTO_400k_optimizer_original_FC2_r1_cutoff_0.6.pt
+      module_path: external/modelsmatter_modelzoo/external_models/Retroformer_as_one_step/
+      
+stock:
+  files:
+    zinc: download/paroutes_stock.hdf5
+   

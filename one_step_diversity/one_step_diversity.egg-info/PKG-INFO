@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: one-step-diversity
+Version: 0.1
+Summary: One step model
+Author: kepeng
+Author-email: chenkepengjy@163.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# one_step_diversity
+
+deduplicated reactions not relevent to diversity
+
