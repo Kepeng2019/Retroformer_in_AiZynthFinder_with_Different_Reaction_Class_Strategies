@@ -99,7 +99,7 @@ All scripts for retrosynthesis planning are located in z_scripts.
 
 ## Datasets & Models
 
-Datasets and models that are not proprietary are available in the [figshare repository](https://figshare.com/s/2eab4132b322229c1efc).
+Datasets and models that are not proprietary are available in the [Science DB](https://doi.org/10.57760/sciencedb.0170u).
 
 - ZINC molecules file (paroutes_stock.hdf5)​ is included in the download. The file path within the download is download\paroutes_stock.hdf5.
 - 
