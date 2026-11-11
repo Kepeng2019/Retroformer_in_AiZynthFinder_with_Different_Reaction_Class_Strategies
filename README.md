@@ -121,12 +121,26 @@ z_process1_for_success_paths_with_diversity.py
 z_process1_for_success_paths_with_diversity.ipynb
 ```
 
-For all trajectory diversity, the procedure is:
+For all trajectory diversity, the procedure is similar to the above success route diversity.
 
+
+For all trajectory diversity across search depths, the procedure is：
 ```
-z_process1_for_all_tragictorics_with_diversity.py
-z_process1_for_all_tragictorics_with_diversity.ipynb
+z_process2_01_json_to_hdf5_with_different_deeps_for_TED_calculation_and_cluster.py
+z_process2_02_prepare_aizynthfinder_output.py
+z_process2_03_cluster_aizynth_output_kepeng_for_all_routes_ver4_ted_diversity.py # depth 5 as example
 ```
+
+
+For effective branching factor, the procedure is：
+```
+z_process3_01_effective_factor_dynamics_experiments_50k_ver4.py
+z_process3_01_effective_factor_dynamics_experiments_400k_ver4.py
+z_process3_02_process_to_obtain_accumulated_effective_fator
+```
+
+Figres related   procedure in current work are presented in 'figures' directory.
+
 
 Note：the detailed training process of Retroformer is available in the [GitHub repository](https://github.com/Kepeng2019/Retroformer.git)
 
